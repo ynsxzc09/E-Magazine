@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+}
+body {
+  margin: 30px 0;
+  height: 135vh;
+}
+
+.container {
+  border: 2px solid black;
+  width: 50vw;
+  margin: 0 auto;
+  display: grid;
+  color: black;
+  grid-template-columns: 1fr 150px 200px;
+}
+.item1 {
+  margin: 0 0 0 30px;
+  background-color: mintcream;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.item1 img {
+  width: 90px;
+  height: 450px;
+}
+.item2 {
+  background-color: mintcream;
+  grid-row: 1 / 2;
+  grid-column: 2 /4;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.item2 img {
+  padding: 10px;
+  width: 370px;
+  height: 450px;
+}
+
+.item3 {
+  background-color: mintcream;
+  grid-row: 1 / 2;
+  grid-column: 4 / 6;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.item3 img {
+  padding: 10px;
+  width: 370px;
+  height: 450px;
+}
+
+.item4 {
+  background-color: mintcream;
+  grid-row: 3 / 6;
+  grid-column: 1 / 4;
+}
+.item4 div {
+  font-family: cursive;
+  margin: 5%;
+  padding: 15px;
+}
+.item4 .content {
+  font-size: small;
+  border: 5px solid black;
+  border-style: dashed;
+}
+.item4 .content h3 {
+  color: red;
+}
+.item5 {
+  grid-row: 3 / 5;
+  grid-column: 4 / 6;
+  background-color: mintcream;
+}
+.item5 div {
+  font-family: cursive;
+  margin: 6%;
+  padding: 15px;
+}
+
+.item5 .content1 {
+  font-size: small;
+  border: 5px solid black;
+  border-style: dashed;
+}
+.item5 .content1 h3 {
+  color: red;
+}
+footer {
+  background-color: mintcream;
+  grid-row: 5 / 6;
+  grid-column: 1 / 6;
+}
+footer div {
+  display: inline-block;
+  padding: 5px;
+}
+footer a {
+  color: black;
+}
+footer .next {
+  float: right;
+}
+footer div:hover {
+  cursor: pointer;
+  background-color: beige;
+}
+
+@media (max-width: 820px) {
+  body {
+    margin: 0;
+  }
+  .container {
+    width: 80vw;
+    grid-template-columns: repeat(auto-fit, 150px 80px) !important;
+  }
+  .item2 img,
+  .item3 img {
+    width: 250px !important;
+    height: 50vh !important;
+  }
+  .item4 div {
+    font-family: cursive;
+    margin: 6%;
+    padding: 29px;
+  }
+  .item5 div {
+    font-family: cursive;
+    margin: 6%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1400px) {
+  body {
+    height: 190vh;
+    margin: 0;
+  }
+  .container {
+    width: 80vw;
+    grid-template-columns: 1fr 400px;
+  }
+  .item2 img,
+  .item3 img {
+    width: 350px;
+  }
+}
